@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "installedAt": "2026-11-04",
-  "installationType": "project-adapters",
-  "upstreamBundlesVendored": false,
+  "installationType": "project-adapters-and-installed-skills",
+  "upstreamBundlesVendored": true,
   "deduplicatedPlugins": 7,
   "entries": [
     {
@@ -84,6 +84,17 @@
       "upstreamStatus": "host-skill-readable",
       "cliStatus": "not-bundled",
       "requiredFor": "Route to bundled redesign-existing-projects; use taste/frontend-engineering as supporting workflows. Preserve domain behavior and constraints. Here the old preview is rejected, and this repository has no app to migrate."
+    },
+    {
+      "id": "apple-design",
+      "plugin": null,
+      "source": "https://github.com/emilkowalski/skills",
+      "adapter": ".agents/skills/apple-design/SKILL.md",
+      "status": "upstream-skill-installed",
+      "upstreamStatus": "project-local-readable",
+      "cliStatus": "installed-via-skills-cli",
+      "requiredFor": "Gesture and motion implementation/review, sheets, direct manipulation, typography and reduced-motion accessibility. Preserve Brandfolio identity and canonical tokens.",
+      "lockfile": "skills-lock.json"
     }
   ]
 }
