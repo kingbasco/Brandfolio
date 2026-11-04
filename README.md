@@ -17,6 +17,8 @@ A cloud-based workspace for turning brand assets into editable brand guidelines,
 
 ## Design direction
 
+**Latest selection:** the owner chose [TapTap Design System](https://www.figma.com/design/t6KToC5v6W2KNpPpmcGVVK/?node-id=4-462). Adoption is pending Figma access. The existing visual artifacts below are the previous proposal, not an implementation of TapTap.
+
 The owner selected **“Expressive creative studio: stronger color, distinctive typography, more visual personality.”** The proposed v0.1 system uses cobalt, lilac, yellow, expressive geometric display type, and quiet working surfaces. The direction is confirmed; the exact token choices remain a reviewable proposal.
 
 [Design-system reference sheet](design-system/index.html) is a static documentation specimen, not the application. Open it through a browser-based cloud workspace preview. GitHub’s file view displays its source, not a running app. It loads the generated tokens and shows foundations, controls, states, editor structure, and admin patterns.
