@@ -13,7 +13,7 @@ A cloud-based workspace for turning brand assets into editable brand guidelines,
 5. [User journeys](docs/user-flows.md) — creation, imports, delivery, and administration.
 6. [Development phases](docs/development/phases.md) and [initial backlog](docs/development/backlog.md).
 7. [Design system](DESIGN.md), [interaction contract](UX-CONTRACT.md), and [component specification](docs/design/components.md).
-8. [Skill workflow](docs/development/skills.md) — seven requested plugins, eight project adapters including the premium dependency.
+8. [Skill workflow](docs/development/skills.md) — seven requested plugins, eight project adapters including the premium dependency, plus the installed Apple Design skill.
 
 ## Design direction
 
