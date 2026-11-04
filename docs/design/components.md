@@ -54,3 +54,7 @@ Every component requires default, hover, focus-visible, pressed/selected, disabl
 ## Governance
 
 New patterns start in shared primitives, with a documented reason and state coverage. A feature may compose primitives but must not fork spacing, colors, toast timing or confirmation rules. Implementation owners are named in UX-CONTRACT.md. Review token changes across affected public/product/admin contexts, not only the screen that motivated them.
+
+## TapTap source mapping
+
+Visual foundations now follow [TapTap adoption](taptap-adoption.md). Primary/outline/ghost/link styles map to existing planned button ownership. Source primary buttons use 4px corners and default/hover/pressed/disabled variants; retain Brandfolio 44px targets, dark readable labels, focus, busy and keyboard contracts. Input/table/dialog pages are identified in the evidence map; read detailed source nodes when implementing those variants. Production primitives remain planned.
