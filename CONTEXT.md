@@ -14,7 +14,7 @@ Updated: 2026-11-04 (Africa/Lagos). Repository: `kingbasco/Brandfolio`.
 - Use the seven tagged plugins; UI UX Designer was tagged twice and is one integration.
 - Previous interface rejected. New direction: expressive creative studio, stronger color, distinctive typography.
 
-- Latest design-system selection: [TapTap Design System](https://www.figma.com/design/t6KToC5v6W2KNpPpmcGVVK/?node-id=4-462). This supersedes the custom v0.1 proposal as the intended source. Extraction is pending an accessible copy.
+- Latest design-system selection: [TapTap Design System](https://www.figma.com/design/2To7iHU0ouUB2HarbFHM8z/). This supersedes the custom v0.1 proposal as the intended source. Source inspected; v0.2 foundations and reference sheet adapted with attribution and documented accessibility changes.
 
 ## Proposed implementation decisions
 
@@ -22,7 +22,7 @@ Updated: 2026-11-04 (Africa/Lagos). Repository: `kingbasco/Brandfolio`.
 - One versioned document schema shared by template generation, imports, editor and export.
 - Structured editor before freeform canvas; AI changes are reviewable proposals.
 - Default private records; publication and AI-reference/training permissions are separate.
-- Cobalt/lilac/yellow system v0.1, specified in DESIGN.md. These exact values are proposed, not individually approved by the owner.
+- TapTap-derived v0.2 is specified in DESIGN.md. Production component implementation and screen approval remain outstanding.
 
 ## Evidence and limits
 
@@ -32,7 +32,7 @@ The repository initially contained only `# Brandfolio`. There is no incumbent co
 
 | Decision | Needed by | Safe current treatment |
 |---|---|---|
-| Exact visual tokens and representative screen composition | P1 visual review | v0.1 proposal, easy to change through one source |
+| Exact visual tokens and representative screen composition | P1 visual review | TapTap-derived v0.2; validate each implemented surface |
 | Preview-image-first vs code-first screen workflow | First actual application surface | No standing workflow preference recorded |
 | AI model/provider and data terms | P8 | No provider connected or training enabled |
 | Retention periods, backup RPO/RTO and legal terms | Before public beta | No production deletion/retention promises |
