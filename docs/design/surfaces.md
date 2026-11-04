@@ -4,7 +4,7 @@ These specify structure, not final high-fidelity screen approval. All 46 screens
 
 ## Public website — Persuade (S01–S07)
 
-Job: understand the actual product and choose a next step. Expressive Outfit headline beside a real guideline specimen; one cobalt primary action. Alternate white breathing space with a bounded lilac/yellow specimen section. No fictitious testimonials or adoption metrics. The template gallery is artifact-led; legal/help routes use a reading layout.
+Job: understand the actual product and choose a next step. System-sans headline beside a real guideline specimen; one turquoise primary action. Use neutral breathing space and bounded turquoise/orange specimen accents from the TapTap-derived system. No fictitious testimonials or adoption metrics. The template gallery is artifact-led; legal/help routes use a reading layout.
 
 ```text
 Brandfolio       Product  Templates  Help       Log in / Create account
