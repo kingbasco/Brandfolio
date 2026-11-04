@@ -7,6 +7,7 @@ def check(ok,message):
 required=['README.md','AGENTS.md','CONTEXT.md','PRODUCT.md','ARCHITECTURE.md','DESIGN.md','UX-CONTRACT.md','docs/screens.md','docs/user-flows.md','docs/development/phases.md','docs/development/skills.md','design-system/index.html']
 for name in required:check((root/name).exists(),'Missing '+name)
 for file in root.rglob('*.md'):
+ if any(part in {'.venv','node_modules','.git'} for part in file.relative_to(root).parts):continue
  for url in re.findall(r'\]\(([^\s)]+)(?:\s+"[^"]*")?\)',file.read_text()):
   if re.match(r'^[a-zA-Z][\w+.-]*:',url) or url.startswith('#'):continue
   path=url.split('#')[0]
