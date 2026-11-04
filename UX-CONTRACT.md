@@ -1,5 +1,7 @@
 # Shared interaction contract
 
+Visual source: [TapTap-derived v0.2](docs/design/taptap-adoption.md); source appearance does not replace this behavior contract.
+
 Status: implementation contract for upcoming code. No primitives listed below are implemented by this document.
 
 ## Canonical ownership
