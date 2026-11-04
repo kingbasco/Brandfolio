@@ -24,3 +24,9 @@
 ## Review status
 
 Direction confirmed. System v0.1 drafted. Token/contract checks can be verified mechanically; rendered specimen checks are recorded separately. No product screen, authentication flow or production backend is approved by this document.
+
+## Latest owner selection: TapTap
+
+The owner selected [TapTap Design System](https://www.figma.com/design/t6KToC5v6W2KNpPpmcGVVK/?node-id=4-462) as the design-system source. This supersedes the earlier custom-system proposal. The Figma connector rejected both session creation and design-context reads for lack of edit access. No source tokens, component variants, typography, or licensing details have been inspected.
+
+Next: inspect an accessible duplicate, extract foundations and component states, map them to Brandfolio primitives, update canonical tokens and reference specimens, and rerun contrast/responsive/interaction checks. Existing v0.1 artifacts are retained only as the previous proposal until that inspection; do not call them TapTap-derived.
