@@ -42,6 +42,9 @@ components:
     backgroundColor: "{colors.yellow}"
     textColor: "{colors.ink}"
 ---
+
+> Status update: the owner selected [TapTap Design System](https://www.figma.com/design/t6KToC5v6W2KNpPpmcGVVK/?node-id=4-462). Source inspection is blocked by Figma access. The values below remain the previous v0.1 proposal, not extracted TapTap tokens. See [decision log](docs/design/decision-log.md).
+
 # Brandfolio design system
 
 Version 0.1.0 — reviewable proposal. The owner confirmed expressive creative studio; exact palette/font/layout values are proposed. Do not claim approval of a screen from token approval alone.
