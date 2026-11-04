@@ -1,5 +1,11 @@
 # Foundation verification
 
+## TapTap v0.2 update
+
+The accessible Figma copy was inspected and its source mapping/CC BY 4.0 attribution recorded. Updated tokens, generated CSS, reference sheet and design contracts passed foundation checks (30 contrast pairs), designmd lint (zero errors/warnings), and cloud Chromium checks for validation, dialog/Escape/focus return, light/dark switching, 390/768/1728px document overflow and page errors. Desktop/mobile/dark captures were visually inspected. The reference uses the source platform font stack with no external font request. Full production components and exhaustive accessibility testing remain outstanding. Prior v0.1 review and Better Design results below are historical and do not certify this revision.
+
+## Historical v0.1 record
+
 Scope: documentation and static design-system reference, November 4, 2026. This is not evidence that the product backend, editor, or React components exist.
 
 ## Completed checks
