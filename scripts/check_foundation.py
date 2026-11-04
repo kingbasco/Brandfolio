@@ -17,9 +17,11 @@ check(all(s['phase'] in {f'P{i}' for i in range(13)} for s in screens),'Unknown 
 check(all(s['id'] in (root/'docs/screens.md').read_text() for s in screens),'Screen docs incomplete')
 check(all('## P'+str(i)+' —' in (root/'docs/development/phases.md').read_text() for i in range(13)),'Phase coverage incomplete')
 check(sum(int(s['phase'][1:])<=7 for s in screens)==34,'Release screen count mismatch')
-reg=json.loads((root/'skills.registry.json').read_text());check(len(reg['entries'])==8,'Expected 8 adapters including dependency')
-check(len({e['plugin'] for e in reg['entries']})==7,'Expected seven unique plugins')
+reg=json.loads((root/'skills.registry.json').read_text());check(len(reg['entries'])==9,'Expected 8 adapters and Apple Design')
+check(len({e['plugin'] for e in reg['entries'] if e.get('plugin')})==7,'Expected seven unique plugins')
 for e in reg['entries']:check((root/e['adapter']).exists(),'Missing adapter '+e['id'])
+lock=json.loads((root/'skills-lock.json').read_text())
+check('apple-design' in lock['skills'],'Missing Apple Design lock entry')
 t=json.loads((root/'design-system/tokens.json').read_text());check(t['themes']['light'].keys()==t['themes']['dark'].keys(),'Theme token sets differ')
 def lum(hex):
  v=[int(hex[i:i+2],16)/255 for i in (1,3,5)];v=[x/12.92 if x<=.04045 else ((x+.055)/1.055)**2.4 for x in v];return sum(a*b for a,b in zip(v,[.2126,.7152,.0722]))
@@ -39,5 +41,5 @@ p=subprocess.run([sys.executable,str(root/'scripts/generate_tokens.py'),'--check
 if failures:
  for f in failures:print('FAIL:',f)
  sys.exit(1)
-print(f'PASS: links, 46 screens, 13 phases, 8 adapters / 7 plugins, generated CSS, {len(ratios)} contrast pairs and frontmatter parity')
+print(f'PASS: links, 46 screens, 13 phases, 8 adapters / 7 plugins + Apple Design, generated CSS, {len(ratios)} contrast pairs and frontmatter parity')
 print('Scope: documentation and token integrity only; product runtime tests and upstream vendor audits are not included.')
