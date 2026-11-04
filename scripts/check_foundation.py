@@ -28,13 +28,13 @@ def lum(hex):
  v=[int(hex[i:i+2],16)/255 for i in (1,3,5)];v=[x/12.92 if x<=.04045 else ((x+.055)/1.055)**2.4 for x in v];return sum(a*b for a,b in zip(v,[.2126,.7152,.0722]))
 def contrast(a,b):
  x,y=sorted([lum(a),lum(b)]);return (y+.05)/(x+.05)
-pairs=[('text','surface',4.5),('text-muted','surface',4.5),('text-muted','canvas',4.5),('on-primary','primary',4.5),('expressive-ink','expressive-lilac',4.5),('expressive-ink','expressive-yellow',4.5),('success','success-surface',4.5),('warning','warning-surface',4.5),('danger','danger-surface',4.5),('info','info-surface',4.5),('focus','surface',3),('control-border','surface',3)]
+pairs=[('text','surface',4.5),('text-muted','surface',4.5),('text-muted','canvas',4.5),('on-primary','primary',4.5),('accent-ink','accent-soft',4.5),('accent-ink','auxiliary-soft',4.5),('success','success-surface',4.5),('warning','warning-surface',4.5),('danger','danger-surface',4.5),('info','info-surface',4.5),('focus','surface',3),('link','surface',4.5),('on-primary','primary-hover',4.5),('on-primary','primary-pressed',4.5),('control-border','surface',3)]
 ratios=[]
 for theme,colors in t['themes'].items():
  for fg,bg,minimum in pairs:
   ratio=contrast(colors[fg],colors[bg]);check(ratio>=minimum,f'{theme} {fg}/{bg}: {ratio:.2f} < {minimum}');ratios.append((theme,fg,bg,round(ratio,2)))
 front=(root/'DESIGN.md').read_text().split('---',2)[1]
-for key,token in [('primary','primary'),('canvas','canvas'),('surface','surface'),('ink','text'),('lilac','expressive-lilac'),('yellow','expressive-yellow')]:check(f'{key}: "{t["themes"]["light"][token]}"' in front,'DESIGN frontmatter drift: '+key)
+for key,token in [('primary','primary'),('canvas','canvas'),('surface','surface'),('ink','text'),('accent','accent-soft'),('auxiliary','auxiliary-soft')]:check(f'{key}: "{t["themes"]["light"][token]}"' in front,'DESIGN frontmatter drift: '+key)
 css=(root/'design-system/tokens.css').read_text();declared=set(re.findall(r'(--[\w-]+)\s*:',css))
 for file in (root/'design-system').glob('*.css'):
  for token in re.findall(r'var\((--[\w-]+)',file.read_text()):check(token in declared,f'Undefined token {token} in {file.name}')
