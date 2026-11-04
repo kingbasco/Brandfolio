@@ -1,23 +1,23 @@
 ---
 version: alpha
 colors:
-  primary: "#3434DF"
-  canvas: "#F5F5FA"
+  primary: "#15C5CE"
+  canvas: "#FAFAFA"
   surface: "#FFFFFF"
-  ink: "#17152B"
-  lilac: "#D9C8FF"
-  yellow: "#F6E169"
+  ink: "#1F1F1F"
+  accent: "#DFF7F7"
+  auxiliary: "#FFE1D6"
 typography:
   display:
-    fontFamily: "Outfit, sans-serif"
+    fontFamily: "system-ui, sans-serif"
   body:
-    fontFamily: "Manrope, sans-serif"
+    fontFamily: "system-ui, sans-serif"
   mono:
-    fontFamily: "IBM Plex Mono, monospace"
+    fontFamily: "Consolas, monospace"
 rounded:
-  control: "8px"
-  panel: "12px"
-  feature: "16px"
+  control: "4px"
+  panel: "8px"
+  feature: "8px"
 spacing:
   unit: "4px"
   group: "16px"
@@ -26,7 +26,7 @@ components:
   button:
     height: "44px"
     backgroundColor: "{colors.primary}"
-    textColor: "{colors.surface}"
+    textColor: "{colors.ink}"
     rounded: "{rounded.control}"
   input:
     height: "44px"
@@ -35,93 +35,78 @@ components:
   canvas:
     backgroundColor: "{colors.canvas}"
     textColor: "{colors.ink}"
-  expressive-lilac:
-    backgroundColor: "{colors.lilac}"
+  selection:
+    backgroundColor: "{colors.accent}"
     textColor: "{colors.ink}"
-  expressive-yellow:
-    backgroundColor: "{colors.yellow}"
+  auxiliary-sample:
+    backgroundColor: "{colors.auxiliary}"
     textColor: "{colors.ink}"
 ---
 
-> Status update: the owner selected [TapTap Design System](https://www.figma.com/design/t6KToC5v6W2KNpPpmcGVVK/?node-id=4-462). Source inspection is blocked by Figma access. The values below remain the previous v0.1 proposal, not extracted TapTap tokens. See [decision log](docs/design/decision-log.md).
-
 # Brandfolio design system
 
-Version 0.1.0 — reviewable proposal. The owner confirmed expressive creative studio; exact palette/font/layout values are proposed. Do not claim approval of a screen from token approval alone.
+Version 0.2.0 — adapted from the owner's selected **TapTap Design System | Developers**. This replaces the custom cobalt/lilac/yellow and Outfit/Manrope proposal. It defines the foundation and reference specimens; production React components remain P1 work.
+
+## Source and attribution
+
+[TapTap source file](https://www.figma.com/design/2To7iHU0ouUB2HarbFHM8z/) by TapTap, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), as stated on source node `2220:27663`. Adaptations include Brandfolio content, responsive layouts, semantic accessibility colors, enlarged targets, and an experimental dark counterpart. No TapTap logo, endorsement, or proprietary font files are included. See [source mapping](docs/design/taptap-adoption.md) and [extracted evidence](design-system/taptap-source.json).
 
 ## Overview
 
-A working studio for people who make identities. Brandfolio should feel like a lively specimen book wrapped around a precise design tool. The signature is a **folio strip**: related logo, palette and typography specimens arranged as one coherent preview of a real brand. It appears in template discovery and brand overview, not as decoration on every screen.
+A precise, approachable workspace with turquoise actions, neutral working surfaces, system typography, small corner radii, and restrained elevation. Warm orange is an auxiliary accent, not an error color. Customer identity assets supply the expressive content; the surrounding editor/admin chrome remains calm. Public marketing may use larger specimen-led compositions, but should use this foundation rather than revive the retired palette.
 
-Replace the rejected cream/olive/serif dashboard. No oversized motivational greeting inside the workspace, invented metrics, emoji logos, decorative section numbers, tilted fake documents or generic hero card. Retain product requirements, not the old visual skin.
-
-Surface registers:
-- Marketing/gallery: expressive color fields, generous type, actual template/document specimens.
-- Workspace/editor/admin: task-first, readable density, restrained chrome; identity in type, active controls and specimen content.
-- Published guideline: the customer’s brand, with minimal platform chrome.
-
-Reference: Awesome DESIGN.md’s **static Figma design study** informed color-block pacing and the distinction between expressive marketing and practical controls. This is not a copy of Figma, its proprietary fonts, assets, logo, text or current live website. Better Design catalog matches were evaluated but not installed: dark analytics systems did not fit the chosen expressive light studio. The custom proposal follows the owner’s direction.
+The folio strip remains a Brandfolio composition: a customer logo, palette, and type specimen grouped together. Customer colors and fonts are independent from platform themes. Published guidelines use customer styles.
 
 ## Colors
 
-Exact values live in [tokens.json](design-system/tokens.json). CSS is generated into [tokens.css](design-system/tokens.css); component code consumes semantic variables rather than copied hex values. The frontmatter above is a checked human-readable subset, not a second editable token source.
+Canonical runtime values: [tokens.json](design-system/tokens.json), generated into [tokens.css](design-system/tokens.css). The frontmatter is a checked subset. Raw source colors are preserved separately; accessible semantic values must not be mislabeled as original TapTap values.
 
-| Role | Light value | Use |
-|---|---|---|
-| Primary cobalt | #3434DF | Main action, links, selection controls; sparing brand identity |
-| Canvas | #F5F5FA | Application background |
-| Surface | #FFFFFF | Content/work surfaces |
-| Ink | #17152B | Main text |
-| Muted text | #625F75 | Supporting text, never low-opacity essential copy |
-| Lilac | #D9C8FF | Expressive specimens/marketing; use ink text |
-| Yellow | #F6E169 | Expressive specimens/marketing; use ink text |
-| Control border | #898599 | Form boundaries when needed for identification |
-| Selected surface | #EAE7FF | Active row/navigation fill |
+| Role | Light value | Origin/use |
+| --- | --- | --- |
+| Primary | #15C5CE | TapTap Primary 600; action background |
+| Hover / pressed | #47CFD6 / #00ABB6 | TapTap Primary 500 / 700 |
+| On primary | #1F1F1F | Neutral 700; dark labels replace source white labels for contrast |
+| Auxiliary | #FF8156 | TapTap Auxiliary 600; bounded accent |
+| Canvas / surface | #FAFAFA / #FFFFFF | Neutral 50 / white |
+| Text / supporting | #1F1F1F / #4B4B4B | Neutral 700 / 600 |
+| Divider / control border | #E1E1E1 / #8E8E8E | Neutral 300 / 500; control boundaries need stronger contrast |
+| Selection | #DFF7F7 | Primary 200 |
+| Links / focus | #007780 | Brandfolio accessibility adaptation; turquoise 600 is too light on white |
 
-Success, warning, danger and info have independent semantic foreground/surface pairs in both themes. Color alone never conveys a status. Decorative brand yellow is not a warning indicator. The client’s colors are content, not app control tokens.
-
-Light theme is the initial application target. Dark tokens are supplied as a proposed counterpart and demonstrated in the reference sheet; no product dark-mode support is claimed until every component/state passes. Customer document canvas colors remain unchanged when the app theme changes.
+Semantic status surfaces come from TapTap's light ramps. Foregrounds are darker Brandfolio variants to meet small-text contrast. Keep labels/icons with status color. Filled primary buttons use an accessible border to distinguish their light turquoise fill from white surfaces. Dark tokens are a Brandfolio extension, not an extracted TapTap dark theme, and are not production-ready without component testing.
 
 ## Typography
 
-- **Outfit**: expressive display and key brand headings; 48–72px marketing, 28–32px page headings, 20px section headings. Do not put marketing-scale type over working records.
-- **Manrope**: controls, forms, navigation and body. 16px body/phone fields, 14px dense desktop labels, 12px nonessential metadata. Weight 400/500/600/700 with restrained bold.
-- **IBM Plex Mono**: color values, dimensions, IDs and measurement only. Never all body copy or decorative technical labels.
-- Line heights: 1.05 display, 1.2 headings, 1.6 reading text, 1.4 utility. Tracking no tighter than -0.03em. Prose measure 65–75ch.
+Use the source's platform stack: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif`. Use Consolas with monospace fallbacks for values/code. Platform fonts are resolved on the viewer's OS; do not redistribute SF UI Text or PingFang files.
 
-Use licensed self-hosted WOFF2 at application implementation time; retain license notices and verify actual loaded faces. The reference sheet may use a clearly disclosed hosted font source and fallbacks. Long names wrap; IDs can truncate with accessible full value. Do not truncate task labels.
+| Style | Size / line height |
+| --- | --- |
+| H1 | 30 / 38px |
+| H2 | 24 / 32px |
+| H3 | 20 / 28px |
+| Title | 18 / 26px |
+| Subtitle | 16 / 24px |
+| Body | 14 / 22px |
+| Caption | 12 / 18px |
+
+Weights: regular 400, medium 500. Brandfolio uses 16/24 for reading and phone inputs, 14/22 for desktop utilities. The reference heading may use 48px as a documented display extension; operational page titles use H1. Use rem equivalents in implementation, accommodate zoom, wrap long names, and preserve full accessible labels.
 
 ## Layout
 
-4px base unit, 8/16/24/32px working rhythm. Group related controls tightly; separate sections more strongly. Avoid spacing as decoration.
+Use 4px control increments with 8/16/24/32px grouping. These are Brandfolio layout rules informed by inspected source components, not a claimed full TapTap spacing scale. Preserve 240px app nav, 64px toolbar, 224px editor section rail and 304px inspector where space allows. Below 1024px use a drawer for the inspector; below 640px use a section sheet. Tables scroll inside a labeled, keyboard-focusable region. Controls and save/error status remain reachable.
 
-- Public: up to 1440px, 24–64px gutters; one expressive composition at a time.
-- Workspace: 240px navigation, 64px toolbar; document scroll owns ordinary pages.
-- Editor desktop: 224px section rail + flexible neutral canvas + 304px inspector. Canvas zoom does not scale control text.
-- Below 1024px: inspector becomes a labeled drawer; below 640px: section rail becomes a sheet. Keep Save/status and section navigation reachable.
-- Admin: same tokens/primitives; data tables with filters and page controls, not a separate visual brand. Table scroll is contained without trapping the whole settings page.
-- Published guidelines: responsive reader; fixed print layout is a separate renderer mode.
+## Shapes and elevation
 
-## Elevation & Depth
+TapTap primary buttons: 4px radius, 40/36/24px large/medium/small source heights; default/hover/pressed/disabled, text/left-icon/right-icon variants. Brandfolio uses a 44px standard hit target and does not expose 24px controls without larger hit areas. Panels use an 8px adaptation. Pills are not the default badge shape.
 
-Default surfaces are flat. Use borders for boundaries and soft shadows only for floating popovers/dialogs. No glass, gradient text, hard slab shadows or competing nested cards. Global scrollbar tokens apply to all app-owned scroll regions; visible thumb, hover and forced-colors behavior are required.
+Four extracted shadow levels are in the token file: subtle dual-layer shadows for raised elements, stronger levels for overlays. Use borders for static working surfaces. No ornamental glass, gradient text or nested decorative cards. Scrollbars, selection, focus and tabular numbers use theme tokens.
 
-## Shapes
+## Components and behavior
 
-8px controls, 12px panels, 16px large expressive frames. Pills reserved for compact badges. Active navigation uses a filled selected surface, not a colored edge. Icons use one declared library (proposed Lucide, 1.75–2px stroke) with accessible names; no Unicode substitute icons.
+[Component specifications](docs/design/components.md) and [UX-CONTRACT.md](UX-CONTRACT.md) retain canonical ownership. TapTap supplies visual reference; Brandfolio supplies tenant permissions, recovery, autosave/conflicts, validation, keyboard operation and domain behavior. Follow the source map before implementing each component. Uninspected variants require a targeted Figma read, not a guess.
 
-## Components
-
-See [component specification](docs/design/components.md), [surface briefs](docs/design/surfaces.md) and [UX contract](UX-CONTRACT.md). Canonical values flow JSON → generator → CSS → primitives → screens. Component state demos are specimens, not evidence that production components exist.
-
-Motion: 120ms control feedback, 180ms normal transitions, 240ms drawers; honor reduced motion. No entrance animation blocks content. Pending feedback preserves button and panel geometry.
-
-## Do's and Don'ts
-
-**Do:** make the designer’s actual work the visual focus; use expressive color in bounded areas; preserve readable hierarchy; design all states; keep customer brand and platform styling separate; test long content and keyboard navigation.
-
-**Don’t:** recycle the rejected interface; fake completed integrations; treat sample brands as customers; automatically publish uploads; use one-off component colors; hide errors in transient toasts; ship dead buttons; copy another company’s assets or proprietary fonts.
+Motion remains a Brandfolio behavior extension: 120ms feedback, 180ms transitions, 240ms panels; Motion and Apple Design guide interruptible gestures and reduced-motion alternatives. Installing Motion is not evidence that animation is implemented.
 
 ## Governance
 
-Tokens are versioned. Token changes update JSON and regenerate CSS in one changeset. The check enforces frontmatter subset parity and key contrast pairs. New variants need a business purpose, accessibility behavior and state coverage. Separate capability status (planned/implemented/verified) from attractive visual specimens.
+Update tokens, generated CSS, source mapping and specimens together. Verify contrast in all states, responsive layout, keyboard/focus and reduced motion. Preserve source attribution and distinguish source values from adaptations. Token or specimen approval is not approval of production screens. Do not copy TapTap branding, sample metrics, or factual claims into Brandfolio.
