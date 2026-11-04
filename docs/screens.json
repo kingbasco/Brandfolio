@@ -1,0 +1,370 @@
+[
+  {
+    "id": "S01",
+    "name": "Homepage",
+    "route": "/",
+    "access": "Visitor",
+    "job": "Understand product and start",
+    "phase": "P7"
+  },
+  {
+    "id": "S02",
+    "name": "How it works",
+    "route": "/how-it-works",
+    "access": "Visitor",
+    "job": "Explain workflow and import limits",
+    "phase": "P7"
+  },
+  {
+    "id": "S03",
+    "name": "Template gallery",
+    "route": "/templates",
+    "access": "Visitor / member",
+    "job": "Filter and choose template",
+    "phase": "P3"
+  },
+  {
+    "id": "S04",
+    "name": "Template detail",
+    "route": "/templates/:id",
+    "access": "Visitor / member",
+    "job": "Preview sections and use version",
+    "phase": "P3"
+  },
+  {
+    "id": "S05",
+    "name": "Plans and usage",
+    "route": "/plans",
+    "access": "Visitor",
+    "job": "Explain verified allowances; no invented pricing",
+    "phase": "P7"
+  },
+  {
+    "id": "S06",
+    "name": "Help center",
+    "route": "/help/*",
+    "access": "Visitor / member",
+    "job": "Find instructions and recovery paths",
+    "phase": "P7"
+  },
+  {
+    "id": "S07",
+    "name": "Legal/privacy family",
+    "route": "/legal/:document",
+    "access": "Visitor",
+    "job": "Read approved terms and data policies",
+    "phase": "P7"
+  },
+  {
+    "id": "S08",
+    "name": "Sign up",
+    "route": "/sign-up",
+    "access": "Visitor",
+    "job": "Create account and accept terms",
+    "phase": "P2"
+  },
+  {
+    "id": "S09",
+    "name": "Log in",
+    "route": "/login",
+    "access": "Visitor",
+    "job": "Authenticate and return to intended route",
+    "phase": "P2"
+  },
+  {
+    "id": "S10",
+    "name": "Email verification",
+    "route": "/verify-email",
+    "access": "Pending account",
+    "job": "Verify/resend/change address",
+    "phase": "P2"
+  },
+  {
+    "id": "S11",
+    "name": "Password recovery family",
+    "route": "/password/*",
+    "access": "Visitor",
+    "job": "Request and complete reset",
+    "phase": "P2"
+  },
+  {
+    "id": "S12",
+    "name": "Workspace onboarding",
+    "route": "/onboarding",
+    "access": "Authenticated",
+    "job": "Create initial workspace",
+    "phase": "P2"
+  },
+  {
+    "id": "S13",
+    "name": "Workspace home",
+    "route": "/w/:w",
+    "access": "Member",
+    "job": "Resume work or create a brand",
+    "phase": "P3"
+  },
+  {
+    "id": "S14",
+    "name": "Brands list",
+    "route": "/w/:w/brands",
+    "access": "Member",
+    "job": "Find/create/archive brand",
+    "phase": "P3"
+  },
+  {
+    "id": "S15",
+    "name": "Brand overview",
+    "route": "/w/:w/brands/:b",
+    "access": "Member",
+    "job": "Review facts and related guidelines",
+    "phase": "P3"
+  },
+  {
+    "id": "S16",
+    "name": "Brand setup/assets",
+    "route": "/w/:w/brands/:b/assets",
+    "access": "Editor / owner",
+    "job": "Manage logo, colors, fonts and brief",
+    "phase": "P3"
+  },
+  {
+    "id": "S17",
+    "name": "Guidelines library",
+    "route": "/w/:w/guidelines",
+    "access": "Member",
+    "job": "Search/open/create/duplicate documents",
+    "phase": "P4"
+  },
+  {
+    "id": "S18",
+    "name": "New guideline wizard",
+    "route": "/w/:w/guidelines/new",
+    "access": "Editor / owner",
+    "job": "Choose brand, template and sections",
+    "phase": "P4"
+  },
+  {
+    "id": "S19",
+    "name": "Import studio",
+    "route": "/w/:w/imports/new",
+    "access": "Editor / owner",
+    "job": "Upload sources and choose intent",
+    "phase": "P9"
+  },
+  {
+    "id": "S20",
+    "name": "Import review",
+    "route": "/w/:w/imports/:i/review",
+    "access": "Editor / owner",
+    "job": "Correct reconstruction and map fields",
+    "phase": "P9"
+  },
+  {
+    "id": "S21",
+    "name": "Guideline editor",
+    "route": "/w/:w/guidelines/:d/edit",
+    "access": "Editor / owner",
+    "job": "Edit, save, reorder and recover",
+    "phase": "P4"
+  },
+  {
+    "id": "S22",
+    "name": "Preview and delivery",
+    "route": "/w/:w/guidelines/:d/deliver",
+    "access": "Editor / publisher",
+    "job": "Preview/export/publish revision",
+    "phase": "P5"
+  },
+  {
+    "id": "S23",
+    "name": "Private template library",
+    "route": "/w/:w/templates",
+    "access": "Member",
+    "job": "Reuse and version private templates",
+    "phase": "P6"
+  },
+  {
+    "id": "S24",
+    "name": "Jobs and activity",
+    "route": "/w/:w/jobs",
+    "access": "Member",
+    "job": "Inspect progress and retry eligible jobs",
+    "phase": "P5"
+  },
+  {
+    "id": "S25",
+    "name": "Workspace settings",
+    "route": "/w/:w/settings",
+    "access": "Owner / scoped member",
+    "job": "Workspace defaults, usage and members",
+    "phase": "P2"
+  },
+  {
+    "id": "S26",
+    "name": "Profile and security",
+    "route": "/account",
+    "access": "Authenticated",
+    "job": "Profile/session/security settings",
+    "phase": "P2"
+  },
+  {
+    "id": "S27",
+    "name": "Community submission",
+    "route": "/w/:w/submissions/:id",
+    "access": "Contributor",
+    "job": "Sanitize copy and submit for review",
+    "phase": "P10"
+  },
+  {
+    "id": "S28",
+    "name": "Published guideline",
+    "route": "/g/:token",
+    "access": "Authorized recipient",
+    "job": "Read immutable published revision",
+    "phase": "P5"
+  },
+  {
+    "id": "S29",
+    "name": "Shared assets",
+    "route": "/g/:token/assets",
+    "access": "Authorized recipient",
+    "job": "Download only permitted assets",
+    "phase": "P11"
+  },
+  {
+    "id": "S30",
+    "name": "Access/unavailable family",
+    "route": "/access",
+    "access": "Any",
+    "job": "Explain access failure without leaking data",
+    "phase": "P2"
+  },
+  {
+    "id": "S31",
+    "name": "Admin overview",
+    "route": "/admin",
+    "access": "Scoped admin",
+    "job": "Operational issues and queue summary",
+    "phase": "P2"
+  },
+  {
+    "id": "S32",
+    "name": "Users/workspaces",
+    "route": "/admin/workspaces",
+    "access": "Support / super admin",
+    "job": "Search account metadata",
+    "phase": "P2"
+  },
+  {
+    "id": "S33",
+    "name": "Workspace/user detail",
+    "route": "/admin/workspaces/:w",
+    "access": "Support / super admin",
+    "job": "Inspect metadata and audited restrictions",
+    "phase": "P2"
+  },
+  {
+    "id": "S34",
+    "name": "Template catalog management",
+    "route": "/admin/templates",
+    "access": "Template admin",
+    "job": "Create, test and version platform templates",
+    "phase": "P3"
+  },
+  {
+    "id": "S35",
+    "name": "Submission queue",
+    "route": "/admin/submissions",
+    "access": "Moderator",
+    "job": "Triage submitted copies",
+    "phase": "P10"
+  },
+  {
+    "id": "S36",
+    "name": "Submission review",
+    "route": "/admin/submissions/:s",
+    "access": "Moderator",
+    "job": "Review copy, rights and quality",
+    "phase": "P10"
+  },
+  {
+    "id": "S37",
+    "name": "Reports/removals",
+    "route": "/admin/reports",
+    "access": "Moderator",
+    "job": "Resolve reports and publish decisions",
+    "phase": "P10"
+  },
+  {
+    "id": "S38",
+    "name": "Processing jobs",
+    "route": "/admin/jobs",
+    "access": "Operations",
+    "job": "Inspect errors and safe retries",
+    "phase": "P5"
+  },
+  {
+    "id": "S39",
+    "name": "AI and usage controls",
+    "route": "/admin/usage",
+    "access": "Operations / super admin",
+    "job": "Budgets, provider state and feature controls",
+    "phase": "P8"
+  },
+  {
+    "id": "S40",
+    "name": "Website content",
+    "route": "/admin/content",
+    "access": "Content admin",
+    "job": "Maintain public copy and help",
+    "phase": "P7"
+  },
+  {
+    "id": "S41",
+    "name": "Permissions/datasets",
+    "route": "/admin/datasets",
+    "access": "Data steward / super admin",
+    "job": "Review grants, provenance and withdrawal",
+    "phase": "P12"
+  },
+  {
+    "id": "S42",
+    "name": "Audit log",
+    "route": "/admin/audit",
+    "access": "Scoped admin",
+    "job": "Trace privileged changes",
+    "phase": "P2"
+  },
+  {
+    "id": "S43",
+    "name": "Platform settings",
+    "route": "/admin/settings",
+    "access": "Super admin",
+    "job": "Limits, features and admin roles",
+    "phase": "P2"
+  },
+  {
+    "id": "S44",
+    "name": "Client review",
+    "route": "/review/:token",
+    "access": "Invited recipient",
+    "job": "Comment/approve a specific revision",
+    "phase": "P11"
+  },
+  {
+    "id": "S45",
+    "name": "Team invitation",
+    "route": "/invite/:token",
+    "access": "Invited identity",
+    "job": "Accept/decline assigned workspace role",
+    "phase": "P11"
+  },
+  {
+    "id": "S46",
+    "name": "Billing/subscription",
+    "route": "/w/:w/billing",
+    "access": "Owner",
+    "job": "Manage subscription and invoices",
+    "phase": "P11"
+  }
+]
