@@ -14,6 +14,8 @@ Updated: 2026-11-04 (Africa/Lagos). Repository: `kingbasco/Brandfolio`.
 - Use the seven tagged plugins; UI UX Designer was tagged twice and is one integration.
 - Previous interface rejected. New direction: expressive creative studio, stronger color, distinctive typography.
 
+- Latest design-system selection: [TapTap Design System](https://www.figma.com/design/t6KToC5v6W2KNpPpmcGVVK/?node-id=4-462). This supersedes the custom v0.1 proposal as the intended source. Extraction is pending an accessible copy.
+
 ## Proposed implementation decisions
 
 - React + TypeScript + Vite client; Workers API; hosted PostgreSQL/Supabase Auth; private R2 assets.
