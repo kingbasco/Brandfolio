@@ -1,0 +1,12 @@
+{
+  "name": "brandfolio",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Brandfolio documentation, design system, and application foundation",
+  "scripts": {
+    "check:foundation": "python scripts/check_foundation.py"
+  },
+  "dependencies": {
+    "motion": "14.9.1"
+  }
+}
