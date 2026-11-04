@@ -8,7 +8,7 @@ Read, in order: CONTEXT.md → PRODUCT.md → relevant architecture/phase/screen
 
 ## Mandatory skill routing
 
-All product/design work must use the relevant project adapters under `.agents/skills/`. They reference the actual upstream sources; load those full sources through the host before using them. The registry is a capability/provenance record, not an npm dependency list.
+All product/design work must use the relevant project adapters under `.agents/skills/`. Apple Design is installed directly and is readable locally. The other adapters reference the actual upstream sources; load those full sources through the host before using them. The registry is a capability/provenance record, not an npm dependency list.
 
 | Work | Required route |
 |---|---|
@@ -18,6 +18,7 @@ All product/design work must use the relevant project adapters under `.agents/sk
 | Existing UI redesign | Redesign primary workflow + Premium + Impeccable; preserve product truth |
 | Component/token changes | DesignSystem route + Premium token mapping + UI UX component rules |
 | Critique/release review | Impeccable + Better Design applicable checks + project verification |
+| Gesture/motion and interaction polish | Read local `.agents/skills/apple-design/SKILL.md` alongside the existing UI routes; preserve Brandfolio tokens and expressive direction, provide keyboard alternatives and reduced-motion behavior |
 | Backend-only work | Product, architecture, security and API contracts; do not fabricate a design review requirement for unrelated code |
 
 UI UX Designer was tagged twice: register it once. DesignSystem’s bundled Impeccable and the standalone Impeccable are separate upstream workflows; follow the entry plugin’s routing rather than blending commands. Do not overwrite account-wide Better Design rules without its explicit approval requirement.
