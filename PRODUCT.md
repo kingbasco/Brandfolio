@@ -41,7 +41,7 @@ Designers work with logo variants, palette values, fonts, written rules, images 
 
 ## Brand Commitments
 
-Working name: Brandfolio. The owner rejected the prior interface and selected an expressive creative-studio direction. The current repository must preserve product goals while replacing the earlier visual treatment.
+Working name: Brandfolio. The owner rejected the prior interface and selected an expressive creative-studio direction. The owner subsequently chose TapTap as the design-system source. The current repository preserves product goals while adopting its visual foundations.
 
 ## Evidence on Hand
 
