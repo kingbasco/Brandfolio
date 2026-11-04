@@ -1,0 +1,804 @@
+{
+  "fileKey": "2To7iHU0ouUB2HarbFHM8z",
+  "url": "https://www.figma.com/design/2To7iHU0ouUB2HarbFHM8z/",
+  "license": "CC BY 4.0",
+  "licenseNode": "2220:27663",
+  "colors": {
+    "Neutral 700": {
+      "value": "#1F1F1F",
+      "nodeId": "4:974"
+    },
+    "Neutral 600": {
+      "value": "#4B4B4B",
+      "nodeId": "4:981"
+    },
+    "Neutral 500": {
+      "value": "#8E8E8E",
+      "nodeId": "4:986"
+    },
+    "Neutral 400": {
+      "value": "#CACACA",
+      "nodeId": "4:991"
+    },
+    "Neutral 300": {
+      "value": "#E1E1E1",
+      "nodeId": "4:996"
+    },
+    "Neutral 200": {
+      "value": "#EEEEEE",
+      "nodeId": "4:1001"
+    },
+    "Neutral 100": {
+      "value": "#F5F5F5",
+      "nodeId": "4:1006"
+    },
+    "Neutral 50": {
+      "value": "#FAFAFA",
+      "nodeId": "4:1011"
+    },
+    "Primary 700": {
+      "value": "#00ABB6",
+      "nodeId": "4:1021"
+    },
+    "Primary 600": {
+      "value": "#15C5CE",
+      "nodeId": "4:1028"
+    },
+    "Primary 500": {
+      "value": "#47CFD6",
+      "nodeId": "4:1033"
+    },
+    "Primary 400": {
+      "value": "#7DDDE1",
+      "nodeId": "4:1038"
+    },
+    "Primary 300": {
+      "value": "#B0EBEC",
+      "nodeId": "4:1043"
+    },
+    "Primary 200": {
+      "value": "#DFF7F7",
+      "nodeId": "4:1048"
+    },
+    "Primary 100": {
+      "value": "#EEFCFC",
+      "nodeId": "4:1053"
+    },
+    "Primary 50": {
+      "value": "#F9FFFF",
+      "nodeId": "4:1058"
+    },
+    "Auxiliary 700": {
+      "value": "#FE632F",
+      "nodeId": "4:1068"
+    },
+    "Auxiliary 600": {
+      "value": "#FF8156",
+      "nodeId": "4:1075"
+    },
+    "Auxiliary 500": {
+      "value": "#FFA487",
+      "nodeId": "4:1080"
+    },
+    "Auxiliary 400": {
+      "value": "#FFC8B6",
+      "nodeId": "4:1085"
+    },
+    "Auxiliary 300": {
+      "value": "#FFE1D6",
+      "nodeId": "4:1090"
+    },
+    "Auxiliary 200": {
+      "value": "#FFF2EE",
+      "nodeId": "4:1095"
+    },
+    "Auxiliary 100": {
+      "value": "#FFF6F3",
+      "nodeId": "4:1100"
+    },
+    "Auxiliary 50": {
+      "value": "#FFFCFC",
+      "nodeId": "4:1105"
+    },
+    "Danger 700": {
+      "value": "#EC2D30",
+      "nodeId": "4:1132"
+    },
+    "Danger 600": {
+      "value": "#F64C4C",
+      "nodeId": "4:1139"
+    },
+    "Danger 500": {
+      "value": "#EB6F70",
+      "nodeId": "4:1144"
+    },
+    "Danger 400": {
+      "value": "#F49898",
+      "nodeId": "4:1149"
+    },
+    "Danger 300": {
+      "value": "#FFCCD2",
+      "nodeId": "4:1154"
+    },
+    "Danger 200": {
+      "value": "#FFEBEE",
+      "nodeId": "4:1159"
+    },
+    "Danger 100": {
+      "value": "#FEF2F2",
+      "nodeId": "4:1164"
+    },
+    "Danger 50": {
+      "value": "#FFFBFB",
+      "nodeId": "4:1169"
+    },
+    "Warning 700": {
+      "value": "#FE9B0E",
+      "nodeId": "4:1180"
+    },
+    "Warning 600": {
+      "value": "#FFAD0D",
+      "nodeId": "4:1187"
+    },
+    "Warning 500": {
+      "value": "#FFC62B",
+      "nodeId": "4:1192"
+    },
+    "Warning 400": {
+      "value": "#FFDD82",
+      "nodeId": "4:1197"
+    },
+    "Warning 300": {
+      "value": "#FFEAB3",
+      "nodeId": "4:1202"
+    },
+    "Warning 200": {
+      "value": "#FFF7E1",
+      "nodeId": "4:1207"
+    },
+    "Warning 100": {
+      "value": "#FFF9EE",
+      "nodeId": "4:1212"
+    },
+    "Warning 50": {
+      "value": "#FFFDFA",
+      "nodeId": "4:1217"
+    },
+    "Success 700": {
+      "value": "#0C9D61",
+      "nodeId": "4:1228"
+    },
+    "Success 600": {
+      "value": "#47B881",
+      "nodeId": "4:1235"
+    },
+    "Success 500": {
+      "value": "#6BC497",
+      "nodeId": "4:1240"
+    },
+    "Success 400": {
+      "value": "#97D4B4",
+      "nodeId": "4:1245"
+    },
+    "Success 300": {
+      "value": "#C0E5D1",
+      "nodeId": "4:1250"
+    },
+    "Success 200": {
+      "value": "#E5F5EC",
+      "nodeId": "4:1255"
+    },
+    "Success 100": {
+      "value": "#F2FAF6",
+      "nodeId": "4:1260"
+    },
+    "Success 50": {
+      "value": "#FBFEFC",
+      "nodeId": "4:1265"
+    },
+    "Info 700": {
+      "value": "#3A70E2",
+      "nodeId": "4:1276"
+    },
+    "Info 600": {
+      "value": "#3B82F6",
+      "nodeId": "4:1283"
+    },
+    "Info 500": {
+      "value": "#4BA1FF",
+      "nodeId": "4:1288"
+    },
+    "Info 400": {
+      "value": "#93C8FF",
+      "nodeId": "4:1293"
+    },
+    "Info 300": {
+      "value": "#BDDDFF",
+      "nodeId": "4:1298"
+    },
+    "Info 200": {
+      "value": "#E4F2FF",
+      "nodeId": "4:1303"
+    },
+    "Info 100": {
+      "value": "#F1F8FF",
+      "nodeId": "4:1308"
+    },
+    "Info 50": {
+      "value": "#F8FCFF",
+      "nodeId": "4:1313"
+    }
+  },
+  "typography": [
+    {
+      "id": "4:1434",
+      "text": "Style Guide",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1443",
+      "text": "TDS UI Kit",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1449",
+      "text": "Design System",
+      "font": {
+        "family": "Roboto",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1452",
+      "text": "Typograghy",
+      "size": 64,
+      "line": {
+        "unit": "PERCENT",
+        "value": 150
+      }
+    },
+    {
+      "id": "4:1453",
+      "text": "字体是设计系统的重要组成部分，良好的排版规则有助于清晰有效地呈现内容。\nTypography is an important part of a design system, and good typography rules help present content clearly and efficiently.",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1457",
+      "text": "Font Family",
+      "size": 30,
+      "line": {
+        "unit": "PIXELS",
+        "value": 38
+      }
+    },
+    {
+      "id": "4:1459",
+      "text": "Type scale",
+      "size": 30,
+      "line": {
+        "unit": "PIXELS",
+        "value": 38
+      }
+    },
+    {
+      "id": "4:1460",
+      "text": "Font weight",
+      "size": 32,
+      "line": {
+        "unit": "PIXELS",
+        "value": 40
+      }
+    },
+    {
+      "id": "4:1464",
+      "text": "好",
+      "size": 46,
+      "line": {
+        "unit": "PIXELS",
+        "value": 54
+      }
+    },
+    {
+      "id": "4:1465",
+      "text": "中文",
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1466",
+      "text": "Pingfang SC",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1469",
+      "text": "Aa",
+      "size": 46,
+      "line": {
+        "unit": "PIXELS",
+        "value": 54
+      }
+    },
+    {
+      "id": "4:1470",
+      "text": "英文",
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1471",
+      "text": "SF UI Text ",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1474",
+      "text": "123",
+      "size": 46,
+      "line": {
+        "unit": "PIXELS",
+        "value": 54
+      }
+    },
+    {
+      "id": "4:1475",
+      "text": "数字",
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1476",
+      "text": "Helvetica Neue",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1484",
+      "text": "Aa",
+      "size": 46,
+      "line": {
+        "unit": "AUTO"
+      }
+    },
+    {
+      "id": "4:1485",
+      "text": "代码/数据",
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1486",
+      "text": "Consolas",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1487",
+      "text": "使用从「H1」到「Caption」七种样式。\nSeven styles from \"H1\" to \"Caption\" are used.",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1490",
+      "text": "@font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\",SimSun, sans-serif;",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1491",
+      "text": "Style",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1492",
+      "text": "Font size/line height",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1496",
+      "text": "H1",
+      "size": 30,
+      "line": {
+        "unit": "PIXELS",
+        "value": 38
+      }
+    },
+    {
+      "id": "4:1497",
+      "text": "30/38",
+      "size": 30,
+      "line": {
+        "unit": "PIXELS",
+        "value": 38
+      }
+    },
+    {
+      "id": "4:1501",
+      "text": "H2",
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1502",
+      "text": "24/32",
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1506",
+      "text": "H3",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1507",
+      "text": "20/28",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1511",
+      "text": "Title",
+      "size": 18,
+      "line": {
+        "unit": "PIXELS",
+        "value": 26
+      }
+    },
+    {
+      "id": "4:1512",
+      "text": "18/26",
+      "size": 18,
+      "line": {
+        "unit": "PIXELS",
+        "value": 26
+      }
+    },
+    {
+      "id": "4:1515",
+      "text": "Subtitle",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1516",
+      "text": "16/24",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1519",
+      "text": "Body",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1520",
+      "text": "14/22",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1523",
+      "text": "Caption",
+      "size": 12,
+      "line": {
+        "unit": "PIXELS",
+        "value": 18
+      }
+    },
+    {
+      "id": "4:1525",
+      "text": "H1",
+      "size": 30,
+      "line": {
+        "unit": "PIXELS",
+        "value": 38
+      }
+    },
+    {
+      "id": "4:1526",
+      "text": "H2",
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1527",
+      "text": "H3",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1528",
+      "text": "Title",
+      "size": 18,
+      "line": {
+        "unit": "PIXELS",
+        "value": 26
+      }
+    },
+    {
+      "id": "4:1529",
+      "text": "Subtitle",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1530",
+      "text": "Body",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1531",
+      "text": "Caption",
+      "size": 12,
+      "line": {
+        "unit": "PIXELS",
+        "value": 18
+      }
+    },
+    {
+      "id": "4:1532",
+      "text": "12/18",
+      "size": 12,
+      "line": {
+        "unit": "PIXELS",
+        "value": 18
+      }
+    },
+    {
+      "id": "4:1535",
+      "text": "Regular 400",
+      "size": 46,
+      "line": {
+        "unit": "PIXELS",
+        "value": 54
+      }
+    },
+    {
+      "id": "4:1536",
+      "text": "Medium 500",
+      "font": {
+        "family": "PingFang SC",
+        "style": "Medium"
+      },
+      "size": 46,
+      "line": {
+        "unit": "PIXELS",
+        "value": 54
+      }
+    },
+    {
+      "id": "4:1545",
+      "text": "©️ TapTap",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1547",
+      "text": "Data Entry",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    }
+  ],
+  "shadows": [
+    {
+      "id": "4:1349",
+      "text": "General",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1358",
+      "text": "TDS UI Kit",
+      "size": 20,
+      "line": {
+        "unit": "PIXELS",
+        "value": 28
+      }
+    },
+    {
+      "id": "4:1364",
+      "text": "Design System",
+      "font": {
+        "family": "Roboto",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "size": 24,
+      "line": {
+        "unit": "PIXELS",
+        "value": 32
+      }
+    },
+    {
+      "id": "4:1367",
+      "text": "Shadow",
+      "size": 64,
+      "line": {
+        "unit": "PERCENT",
+        "value": 150
+      }
+    },
+    {
+      "id": "4:1368",
+      "text": "通过模拟元素的投影，告诉用户元素之间的高度距离和层次关系。 \nUsers can understand the height distance and hierarchical relationship between the elements by simulating the projection of the elements.",
+      "size": 16,
+      "line": {
+        "unit": "PIXELS",
+        "value": 24
+      }
+    },
+    {
+      "id": "4:1372",
+      "text": "Shadows",
+      "size": 30,
+      "line": {
+        "unit": "PIXELS",
+        "value": 38
+      }
+    },
+    {
+      "id": "4:1378",
+      "text": "Elevation 1 \nHex: #00000\nAlpha: 2%\nX: 0 , Y: 1 , B: 1 , S: 0\n\nHex: #00000\nAlpha: 4%\nX: 0 , Y: 2 , B: 4 , S: 0",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1382",
+      "text": "Elevation 2 \nHex: #00000\nAlpha: 4%\nX: 0 , Y: 1 , B: 4 , S: 0\n\nHex: #00000\nAlpha: 8%\nX: 0 , Y: 4 , B: 10 , S: 0",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1388",
+      "text": "Elevation 3 \nHex: #00000\nAlpha: 4%\nX: 0 , Y: 2 , B: 20 , S: 0\n\nHex: #00000\nAlpha: 8%\nX: 0 , Y: 8 , B: 32 , S: 0",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1392",
+      "text": "Elevation 4 \nHex: #00000\nAlpha: 6%\nX: 0 , Y: 8 , B: 20 , S: 0\n\nHex: #00000\nAlpha: 12%\nX: 0 , Y: 24 , B: 60 , S: 0",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1401",
+      "text": "©️ TapTap",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "4:1403",
+      "text": "Data Entry",
+      "size": 14,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    }
+  ]
+}
