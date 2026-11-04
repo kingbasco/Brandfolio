@@ -50,4 +50,6 @@ See the [verification record](docs/development/verification.md) for completed ch
 
 ## Next implementation milestone
 
+[Installed libraries and cloud setup](docs/development/dependencies.md): Motion for web animation and lazy-loader for isolated Python tooling.
+
 Follow **P1** in the [phase plan](docs/development/phases.md): scaffold the cloud app and shared component workbench, using this system. Do not recreate the discarded preview or jump straight to dozens of screens. Product backend and screen implementation must have their own acceptance evidence.
