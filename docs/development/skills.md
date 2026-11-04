@@ -8,6 +8,16 @@ Eight discoverable project-owned SKILL.md adapters in `.agents/skills/`: the sev
 
 Impeccable’s CLI and Premium’s Python audit scripts were not available as installed executables here. Their required commands must be run when a full upstream runtime is available. Do not claim they ran because an adapter exists. Project-owned token/link/contrast checks are separate checks.
 
+## Apple Design addition
+
+Installed the upstream `apple-design` skill from https://github.com/emilkowalski/skills using the requested skills CLI, scoped to this project and Codex:
+
+```sh
+npx --yes skills add https://github.com/emilkowalski/skills --skill apple-design --agent codex --yes
+```
+
+The full skill is in `.agents/skills/apple-design/SKILL.md`; `skills-lock.json` records its source path and computed hash. This brings the total to nine skill entries: eight adapters covering seven plugins, plus one directly installed upstream skill. Read Apple Design for gesture handling, interruptible motion, sheets, feedback, typography, and accessibility. Apply its interaction guidance within Brandfolio’s existing expressive identity; it does not replace the approved direction or canonical tokens. No UI was restyled by installation.
+
 ## Use in a cloud workspace
 
 1. Open this repository in Codespaces or an equivalent hosted workspace.
