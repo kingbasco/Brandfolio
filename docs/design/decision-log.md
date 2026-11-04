@@ -1,7 +1,7 @@
 # Design decisions and skill synthesis
 
 - **Owner decision:** expressive creative studio. Stronger color and distinctive typography replace the previous preview, not merely recolor it.
-- **Custom proposal:** cobalt action/identity, lilac/yellow expressive surfaces, Outfit + Manrope + IBM Plex Mono. Exact choices remain reviewable.
+- **Custom proposal:** cobalt action/identity, lilac/yellow expressive surfaces, Outfit + Manrope + IBM Plex Mono. Superseded by the later TapTap selection.
 - **Reference:** Awesome DESIGN.md Figma static study supplies principles of color pacing and specimen-led storytelling, not proprietary assets or live-site claims.
 - **Premium:** shared interaction contracts, canonical owners, stable states, non-native product confirmations and token mapping.
 - **UI UX Designer:** users/jobs first, spacing scale, semantic tokens, component anatomy/states and handoff coverage.
@@ -23,10 +23,10 @@
 
 ## Review status
 
-Direction confirmed. System v0.1 drafted. Token/contract checks can be verified mechanically; rendered specimen checks are recorded separately. No product screen, authentication flow or production backend is approved by this document.
+Historical foundation review: system v0.1 drafted. Token/contract checks can be verified mechanically; rendered specimen checks are recorded separately. No product screen, authentication flow or production backend is approved by this document.
 
 ## Latest owner selection: TapTap
 
-The owner selected [TapTap Design System](https://www.figma.com/design/t6KToC5v6W2KNpPpmcGVVK/?node-id=4-462) as the design-system source. This supersedes the earlier custom-system proposal. The Figma connector rejected both session creation and design-context reads for lack of edit access. No source tokens, component variants, typography, or licensing details have been inspected.
+The owner selected TapTap and supplied an accessible copy at https://www.figma.com/design/2To7iHU0ouUB2HarbFHM8z/. Access succeeded. Colors, typography, shadow documentation, button metrics/variants, basic dialog and license were inspected; input/table structure was read. The v0.2 token set and reference sheet now adopt those foundations. Earlier inaccessible links and the custom v0.1 proposal are superseded.
 
-Next: inspect an accessible duplicate, extract foundations and component states, map them to Brandfolio primitives, update canonical tokens and reference specimens, and rerun contrast/responsive/interaction checks. Existing v0.1 artifacts are retained only as the previous proposal until that inspection; do not call them TapTap-derived.
+See [adoption record](taptap-adoption.md) for source IDs, CC BY 4.0 attribution, adaptations and coverage limits. Dark text on turquoise, darker links/status labels and larger touch targets preserve Brandfolio's accessibility target. Full production-component implementation remains P1 work.
