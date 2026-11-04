@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "installedAt": "2026-11-04",
+  "installationType": "project-adapters",
+  "upstreamBundlesVendored": false,
+  "deduplicatedPlugins": 7,
+  "entries": [
+    {
+      "id": "frontend-design",
+      "plugin": "frontend-design-premium@openai-curated-remote",
+      "source": "skill://plugins_6a7039f8e9708191bde88207b1919bf4/frontend-design",
+      "adapter": ".agents/skills/frontend-design/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "host-skill-readable",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Visual direction before UI work. Ground the audience/job, compare alternatives, choose one signature and critique against the brief."
+    },
+    {
+      "id": "frontend-design-premium",
+      "plugin": "frontend-design-premium@openai-curated-remote",
+      "source": "skill://plugins_6a7039f8e9708191bde88207b1919bf4/frontend-design-premium",
+      "adapter": ".agents/skills/frontend-design-premium/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "host-skill-readable",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Load frontend-design first. Read DESIGN.md and UX-CONTRACT.md; resolve canonical owners, failure states, permissions, token mapping and verification before implementation."
+    },
+    {
+      "id": "awesome-design-md",
+      "plugin": "awesome-design-md@openai-curated-remote",
+      "source": "skill://plugins_6ab00dfa42f881919fd039899b17eb57/awesome-design-md",
+      "adapter": ".agents/skills/awesome-design-md/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "host-skill-readable",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Read the reference index and the selected static design study. Use Figma study for pacing/reference only; do not copy logos, text, proprietary fonts or pretend the study is a live audit."
+    },
+    {
+      "id": "ui-ux-designer",
+      "plugin": "uiuxdesigner@openai-curated-remote",
+      "source": "skill://plugins_6ab1460c6efc81919916e2b71639a173/ui-ux-designer",
+      "adapter": ".agents/skills/ui-ux-designer/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "host-skill-readable",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Route structure to information-architecture/user-flows; system work to design-system-builder/component-design; handoff to design-handoff. Read the corresponding full upstream skill before use."
+    },
+    {
+      "id": "better-design",
+      "plugin": "app-6a1e153fb60c8191a1532e5db9b7fe83@openai-curated-remote",
+      "source": null,
+      "adapter": ".agents/skills/better-design/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "connected-tools-available",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Use connected Better Design team rules, UI/UX principles, system discovery and review tools. Keep approved project tokens. Do not set account-wide rules without their required approval. Source advice does not equal rendered approval."
+    },
+    {
+      "id": "impeccable",
+      "plugin": "impeccable@openai-curated-remote",
+      "source": "skill://plugins_6a5028ae047081918e3dfde753112690/impeccable",
+      "adapter": ".agents/skills/impeccable/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "host-skill-readable",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Use init for product truth, shape/new-work for planned surfaces, craft-floor before UI edits, bounded review for completed work. If the launcher is unavailable, disclose that and read product/design context directly as upstream permits."
+    },
+    {
+      "id": "design-system",
+      "plugin": "engineering-suite-design-system@openai-curated-remote",
+      "source": "skill://plugins_6aa30964bbe88191b15add0cdebc8864/entry-design-system",
+      "adapter": ".agents/skills/design-system/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "host-skill-readable",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Route only to init, document or extract using the plugin-bundled impeccable dependency. Preserve existing system values unless the owner changes the direction. Init records product truth; requested visual work then resumes through the appropriate workflow."
+    },
+    {
+      "id": "redesign",
+      "plugin": "engineering-suite-redesign@openai-curated-remote",
+      "source": "skill://plugins_6aa2fe6782c08191ad141bc53e762ad3/entry-redesign",
+      "adapter": ".agents/skills/redesign/SKILL.md",
+      "status": "adapter-installed",
+      "upstreamStatus": "host-skill-readable",
+      "cliStatus": "not-bundled",
+      "requiredFor": "Route to bundled redesign-existing-projects; use taste/frontend-engineering as supporting workflows. Preserve domain behavior and constraints. Here the old preview is rejected, and this repository has no app to migrate."
+    }
+  ]
+}
