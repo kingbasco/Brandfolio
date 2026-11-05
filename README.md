@@ -4,6 +4,8 @@ A cloud-based workspace for turning brand assets into editable brand guidelines,
 
 **Current stage: documentation, TapTap design-system foundation, and a working React landing page.** The landing page has a large product banner and 12 original brand-cover concepts with search, filters, sorting, previews, and SVG downloads. These are cover concepts; editable templates, accounts, the guideline editor, backend services, and AI are still planned. The previous private preview is a rejected exploration, not this repository’s implementation baseline. Nothing from its interface or data has been migrated.
 
+Live landing page: **https://brandfolio.adeseghacyril.workers.dev**. See [hosting and redeployment](docs/development/cloudflare-hosting.md). GitHub pushes do not automatically redeploy yet.
+
 ## Start here
 
 1. [Product brief](PRODUCT.md) — audience, scope, constraints, and open decisions.
@@ -17,6 +19,8 @@ A cloud-based workspace for turning brand assets into editable brand guidelines,
 9. [Skill workflow](docs/development/skills.md) — seven requested plugins, eight project adapters including the premium dependency, plus the installed Apple Design skill.
 
 ## Design direction
+
+The owner subsequently selected a cream/forest/pink/lime marketing direction from a supplied Plerouse reference, with self-hosted Inter Tight as an approved free font alternative. [Marketing direction](docs/design/marketing-direction.md) records the new public-site treatment. The app foundation remains TapTap-derived.
 
 The owner selected **TapTap Design System**. Version 0.2 now adapts its turquoise palette, neutral surfaces, platform typography, small control radii and component patterns. [Source mapping and attribution](docs/design/taptap-adoption.md) distinguish extracted values from Brandfolio accessibility changes and the experimental dark extension. The earlier cobalt/lilac/yellow proposal is superseded.
 
@@ -68,4 +72,4 @@ See the [verification record](docs/development/verification.md) for completed ch
 
 [Installed libraries and cloud setup](docs/development/dependencies.md): Motion for web animation and lazy-loader for isolated Python tooling.
 
-Continue **P1** in the [phase plan](docs/development/phases.md): complete the shared component workbench and representative app/editor/admin layouts. The landing page brings S01 from P7 forward at the owner's request; neither P1 nor P7 is complete. Authentication and tenancy then begin in P2. No public deployment or paid cloud service has been provisioned.
+Continue **P1** in the [phase plan](docs/development/phases.md): complete the shared component workbench and representative app/editor/admin layouts. The landing page brings S01 from P7 forward at the owner's request; neither P1 nor P7 is complete. Authentication and tenancy then begin in P2. The public landing page is hosted on Cloudflare; no paid service was activated.

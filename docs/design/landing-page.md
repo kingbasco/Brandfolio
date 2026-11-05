@@ -1,5 +1,7 @@
 # Landing page — S01 and concept discovery
 
+**Superseding visual update:** [November 5 marketing direction](marketing-direction.md) adopts the owner’s new reference and Inter Tight. Behavioral contracts below remain current; turquoise visual descriptions and review verdicts below document the original landing version.
+
 ## Scope and direction
 
 Owner request: a very big banner explaining Brandfolio, immediately followed by many template listings, using https://www.awwwards.com/websites/ as inspiration. This is a user-authorized S01 slice of P7 pulled forward with P1 React/Vite scaffolding; P1 and P7 are not complete.

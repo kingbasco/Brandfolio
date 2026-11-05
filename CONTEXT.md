@@ -46,3 +46,7 @@ The repository initially contained only `# Brandfolio`. The repository now inclu
 ## Authority and conflict handling
 
 Current explicit owner decisions outrank plugin defaults. Product/security contracts own behavior; DESIGN.md owns intent; tokens.json owns exact runtime values; UX-CONTRACT.md owns shared interaction rules. Plugin suggestions must not silently overwrite these contracts. Record material conflicts in an ADR. Changes to the rejected preview are out of scope.
+
+## November 5 marketing and hosting update
+
+The owner selected the supplied Plerouse screenshot as the landing-page reference and authorized a font alternative because the source link is unavailable. The reference font cannot be identified reliably; Inter Tight is the implemented substitute. The public site now uses cream, forest, pink and lime marketing tokens. Existing TapTap operational foundations remain available. Cloudflare hosts the landing page at https://brandfolio.adeseghacyril.workers.dev; backend services remain planned.

@@ -86,6 +86,14 @@
   --identity-auxiliary: #FF8156;
   --identity-paper: #FFFFFF;
   --overlay-scrim: rgb(0 0 0 / 0.45);
+  --marketing-paper: #FAF8F0;
+  --marketing-forest: #132015;
+  --marketing-pink: #F7B5D0;
+  --marketing-lime: #D6F600;
+  --marketing-muted: #C4CEC3;
+  --marketing-stroke: #425143;
+  --marketing-ink-muted: #4B574C;
+  --marketing-font: "Inter Tight", Arial, sans-serif;
 }
 [data-theme="dark"] {
   --color-canvas: #141414;

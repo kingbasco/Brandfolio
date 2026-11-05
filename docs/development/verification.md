@@ -1,5 +1,10 @@
 # Verification record
 
+## Reference-inspired marketing revision
+
+November 5: build, six local Chromium tests and marketing body-text contrast checks passed. Desktop/mobile captures were inspected. Inter Tight is self-hosted with OFL attribution. No independent review is claimed for this revision (agent service usage limit). See [marketing direction](../design/marketing-direction.md) and [hosting record](cloudflare-hosting.md). Earlier scoped review results below are historical.
+
+
 ## Landing page — November 5, 2026
 
 Scope: S01 public landing page and original cover-concept catalog, with initial P1 React/Vite components. It does not certify authentication, editable templates, guideline generation, backend services, AI or production deployment.

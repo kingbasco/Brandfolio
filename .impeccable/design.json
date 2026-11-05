@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T14:00:00Z",
+  "title": "Brandfolio public marketing extension",
+  "extensions": {
+    "typographyMeta": {
+      "marketing": {
+        "displayName": "Inter Tight",
+        "purpose": "Public marketing, approved alternative to unverified reference font"
+      }
+    },
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "600px"
+      },
+      {
+        "name": "tablet",
+        "value": "900px"
+      }
+    ]
+  },
+  "narrative": {
+    "overview": "Cream and forest marketing surfaces, pink and lime accents. TapTap operational foundations remain unchanged."
+  }
+}

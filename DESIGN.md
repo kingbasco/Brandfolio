@@ -7,7 +7,13 @@ colors:
   ink: "#1F1F1F"
   accent: "#DFF7F7"
   auxiliary: "#FFE1D6"
+  marketing-paper: "#FAF8F0"
+  marketing-forest: "#132015"
+  marketing-pink: "#F7B5D0"
+  marketing-lime: "#D6F600"
 typography:
+  marketing:
+    fontFamily: "Inter Tight, Arial, sans-serif"
   display:
     fontFamily: "system-ui, sans-serif"
   body:
@@ -52,6 +58,9 @@ Version 0.2.0 — adapted from the owner's selected **TapTap Design System | Dev
 [TapTap source file](https://www.figma.com/design/2To7iHU0ouUB2HarbFHM8z/) by TapTap, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), as stated on source node `2220:27663`. Adaptations include Brandfolio content, responsive layouts, semantic accessibility colors, enlarged targets, and an experimental dark counterpart. No TapTap logo, endorsement, or proprietary font files are included. See [source mapping](docs/design/taptap-adoption.md) and [extracted evidence](design-system/taptap-source.json).
 
 ## Overview
+
+**Public marketing update, November 5:** the owner-approved screenshot direction introduces cream and forest surfaces, pink and lime accents, rounded cards and Inter Tight. These tokens live in the marketing group of tokens.json and are generated alongside the unchanged operational TapTap palette. This is a public-site register; see [marketing direction](docs/design/marketing-direction.md) for scope, font provenance and composition.
+
 
 A precise, approachable workspace with turquoise actions, neutral working surfaces, system typography, small corner radii, and restrained elevation. Warm orange is an auxiliary accent, not an error color. Customer identity assets supply the expressive content; the surrounding editor/admin chrome remains calm. Public marketing may use larger specimen-led compositions, but should use this foundation rather than revive the retired palette.
 

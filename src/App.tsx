@@ -152,7 +152,10 @@ function App() {
             <h1 id="hero-heading">
               Your brand.
               <br />
-              By the book<span className="hero-period">.</span>
+              <span className="hero-highlight">By the book.</span>{" "}
+              <span className="hero-signal" aria-hidden="true">
+                <ArrowUpRight />
+              </span>
             </h1>
             <p>
               Find the right template for your brand guidelines.
@@ -190,6 +193,15 @@ function App() {
               </span>
             </div>
           </button>
+          <div
+            className="brand-ingredients"
+            aria-label="Brand guideline essentials"
+          >
+            <span>Logo systems</span>
+            <span>Colour palettes</span>
+            <span>Typography</span>
+            <span>Your story</span>
+          </div>
           <div className="hero-bottom">
             <span>Made for the people behind the brands.</span>
             <a href="#templates">
@@ -471,6 +483,9 @@ function App() {
           <a href="https://github.com/kingbasco/Brandfolio">
             Follow the build <ArrowUpRight size={14} />
           </a>
+        </div>
+        <div className="footer-display" aria-hidden="true">
+          brandfolio<span>.</span>
         </div>
       </footer>
       <Dialog

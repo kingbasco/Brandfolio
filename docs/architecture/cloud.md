@@ -31,3 +31,7 @@ Structured logs with request/job IDs; error reporting; usage counters; health pr
 ## Cloud-only developer loop
 
 Open repository in Codespaces → read AGENTS.md and routed skills → branch → edit → run checks in Codespaces/Actions → preview → inspect states/accessibility → PR evidence → release. CI uses dependency lockfiles when the application is scaffolded. No local model, local database, or laptop-based background worker is a supported production dependency.
+
+## Current public hosting
+
+The landing page is deployed with Cloudflare Workers Static Assets at https://brandfolio.adeseghacyril.workers.dev. No API, storage or auth bindings exist yet. See [hosting record](../development/cloudflare-hosting.md); GitHub automatic deployment remains unconfigured.
