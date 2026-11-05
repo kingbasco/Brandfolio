@@ -2,11 +2,11 @@
 
 Visual source: [TapTap-derived v0.2](docs/design/taptap-adoption.md); source appearance does not replace this behavior contract.
 
-Status: implementation contract for upcoming code. No primitives listed below are implemented by this document.
+Status: initial Button and Dialog components are implemented for S01. Other entries remain planned unless explicitly noted below; this contract does not itself implement capabilities.
 
 ## Canonical ownership
 
-| Capability | Planned owner | Variants | Required evidence |
+| Capability | Canonical owner | Variants | Required evidence |
 |---|---|---|---|
 | Button | packages/ui/Button | primary/secondary/ghost × neutral/danger; default/compact | Keyboard, busy width, contrast |
 | Field/Form | packages/ui/Field + domain schemas | create/edit/inline | Label/error association, first-error focus |
@@ -19,6 +19,14 @@ Status: implementation contract for upcoming code. No primitives listed below ar
 | Search | packages/ui/SearchField | local/remote | Clear, 300ms debounce, IME, stale cancellation |
 | CRUD | route/service adapters | create-return; guideline-create-and-edit; editor-stay | Full flow and failure recovery |
 | Save state | packages/ui/SaveStatus + document service | clean/dirty/saving/saved/error/conflict | No lost edits or stale overwrite |
+
+## Current S01 implementation
+
+- [Button](packages/ui/Button.tsx): native button props and primary/secondary/ghost variants. Busy, danger and compact variants remain planned. Current landing-page styles are in src/styles.css.
+- [Dialog](packages/ui/Dialog.tsx): native modal with title association, close-button initial focus, Tab boundary cycling, Escape/backdrop dismissal, body scroll lock and trigger-focus return. The current close label is specific to template previews; alert, drawer and stacking behavior remain planned.
+- Search and sorting are owned by src/App.tsx for the 12-record local catalog. Immediate search needs no remote debounce or cancellation. Clear/reset returns focus to search; phone input text is 16px. The native OS select is accepted for this two-option catalog sort. Shared SearchField/Select primitives and remote behavior remain planned.
+- Load more retains existing cards and focuses the first appended cover. A polite live status announces shown and matching counts. Query, style and sort are stored in the URL; filter changes reset the visible limit.
+- Playwright evidence lives in [landing.spec.ts](tests/landing.spec.ts); the [verification record](docs/development/verification.md) states its scope.
 
 ## Navigation and lists
 

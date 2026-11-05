@@ -1,6 +1,6 @@
 # Project context
 
-Updated: 2026-11-04 (Africa/Lagos). Repository: `kingbasco/Brandfolio`.
+Updated: 2026-11-05 (Africa/Lagos). Repository: `kingbasco/Brandfolio`.
 
 ## Confirmed by the owner
 
@@ -16,24 +16,27 @@ Updated: 2026-11-04 (Africa/Lagos). Repository: `kingbasco/Brandfolio`.
 
 - Latest design-system selection: [TapTap Design System](https://www.figma.com/design/2To7iHU0ouUB2HarbFHM8z/). This supersedes the custom v0.1 proposal as the intended source. Source inspected; v0.2 foundations and reference sheet adapted with attribution and documented accessibility changes.
 
-## Proposed implementation decisions
+- Landing-page direction: a very large banner explaining Brandfolio, followed immediately by many template listings, inspired by the [Awwwards directory](https://www.awwwards.com/websites/).
 
-- React + TypeScript + Vite client; Workers API; hosted PostgreSQL/Supabase Auth; private R2 assets.
+## Implementation decisions
+
+- React + TypeScript + Vite client implemented for the public landing page. Workers API, hosted PostgreSQL/Supabase Auth, and private R2 assets remain planned.
 - One versioned document schema shared by template generation, imports, editor and export.
 - Structured editor before freeform canvas; AI changes are reviewable proposals.
 - Default private records; publication and AI-reference/training permissions are separate.
-- TapTap-derived v0.2 is specified in DESIGN.md. Production component implementation and screen approval remain outstanding.
+- TapTap-derived v0.2 is specified in DESIGN.md. Initial Button/Dialog components and S01 are implemented; the remaining component library, product screens, and owner acceptance remain outstanding.
+- S01 includes 12 original SVG cover concepts, local search/style filtering/sorting, load more, modal preview and cover downloads. Full editable templates and guideline generation remain planned; see [landing-page scope](docs/design/landing-page.md).
 
 ## Evidence and limits
 
-The repository initially contained only `# Brandfolio`. There is no incumbent code, team research, logo, purchased font, pricing, live service configuration or production customer data here. Earlier mock brand names are not customers. Do not invent testimonials, adoption numbers or completed service integrations.
+The repository initially contained only `# Brandfolio`. The repository now includes the landing-page frontend and original fictional cover artwork, but no validated team research, purchased font, pricing, live service configuration or production customer data. Earlier mock brand names are not customers. Do not invent testimonials, adoption numbers or completed service integrations.
 
 ## Open decisions
 
 | Decision | Needed by | Safe current treatment |
 |---|---|---|
 | Exact visual tokens and representative screen composition | P1 visual review | TapTap-derived v0.2; validate each implemented surface |
-| Preview-image-first vs code-first screen workflow | First actual application surface | No standing workflow preference recorded |
+| Preview-image-first vs code-first screen workflow | Future screen work | S01 was built from the owner's explicit banner/gallery brief; no standing workflow preference recorded |
 | AI model/provider and data terms | P8 | No provider connected or training enabled |
 | Retention periods, backup RPO/RTO and legal terms | Before public beta | No production deletion/retention promises |
 | Published-link modes beyond revocable unlisted access | P5/P11 | No public sharing in foundation |

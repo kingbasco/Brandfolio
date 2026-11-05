@@ -4,7 +4,7 @@ Build vertical journeys: screen + data + permission + failure states + admin sup
 
 ## Current status
 
-P0 documentation and design-system artifacts are created by this foundation. Cloud provider proofs and application implementation remain outstanding. All P1–P12 product work is planned.
+P0 documentation and design-system artifacts exist; cloud provider proofs remain outstanding. P1 is partially implemented: React/TypeScript/Vite, generated token consumption, initial Button/Dialog components and frontend CI. At the owner's request, S01's landing page and concept gallery were brought forward from P7. The gallery supports browsing and SVG cover downloads; it does not implement editable templates or the product backend. P1 and P7 are not complete; P2–P6 and P8–P12 remain planned. See the [landing-page brief](../design/landing-page.md) and [verification evidence](verification.md).
 
 ## P0 — Foundation and proofs
 
@@ -19,6 +19,8 @@ P0 documentation and design-system artifacts are created by this foundation. Clo
 ## P1 — Shared design system and app scaffold
 
 **Screens:** Foundation workbench; route shells. **Depends on:** P0.
+
+**Current evidence:** React/Vite build and initial Button/Dialog landed with S01. The shared workbench, remaining primitive states, routing and hosted preview remain open. Tested widths are 390/768/1440px; the full exit matrix below is not yet complete.
 
 **Work:** React/TypeScript build, generated token adapter, accessible Button/Field/Dialog/Select/Toast/Search/Table primitives, routing, CI, cloud preview. Design representative brand setup/editor/admin layouts before scaling.
 
@@ -79,6 +81,8 @@ P0 documentation and design-system artifacts are created by this foundation. Clo
 ## P7 — Public site and pilot readiness
 
 **Screens:** S01–S02, S05–S07, S40; polish earlier screens. **Depends on:** P2–P6.
+
+**Current evidence:** S01's large banner and concept catalog are implemented as an early public-site slice. Help/legal routes, service integration and pilot readiness remain outstanding. This does not waive the dependencies or exit gate below.
 
 **Work:** Marketing/help/legal integration, real usage allowance display, limited content administration, pilot scripts and core release hardening. No billing required.
 

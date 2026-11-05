@@ -12,3 +12,12 @@ jobs:
           python-version: '3.12'
       - run: python scripts/generate_tokens.py --check
       - run: python scripts/check_foundation.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm test

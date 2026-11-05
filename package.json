@@ -4,9 +4,26 @@
   "private": true,
   "description": "Brandfolio documentation, design system, and application foundation",
   "scripts": {
-    "check:foundation": "python scripts/check_foundation.py"
+    "check:foundation": "python scripts/check_foundation.py",
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "format:check": "prettier --check src packages tests playwright.config.ts tsconfig.json"
   },
   "dependencies": {
-    "motion": "14.9.1"
+    "lucide-react": "1.69.0",
+    "motion": "14.9.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "prettier": "3.9.10",
+    "typescript": "7.0.2",
+    "vite": "8.3.6"
   }
 }

@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Proposed continuation of the architecture discussed with the owner: React/TypeScript/Vite, Cloudflare Workers, hosted Supabase PostgreSQL and Auth, Cloudflare R2, hosted processing and AI. Development through Codespaces or another cloud workspace. The repository is a foundation, not an installed application stack yet.
+Implemented: React/TypeScript/Vite frontend for the public landing page. Planned continuation: Cloudflare Workers, hosted Supabase PostgreSQL and Auth, Cloudflare R2, hosted processing and AI. Development takes place in Codespaces or another cloud workspace. No backend service or public deployment is configured by the landing-page implementation.
 
 ## Users
 
@@ -28,6 +28,10 @@ Designers work with logo variants, palette values, fonts, written rules, images 
 
 ## Capabilities and Constraints
 
+Available now: a public landing page and catalog of 12 original cover concepts, with search, style filters, sorting, load more, preview and SVG cover download. Covers are labeled as concepts, not complete editable guideline templates.
+
+Planned product capabilities and constraints:
+
 - Brand workspaces, asset libraries and guidelines.
 - Versioned templates with brand-field bindings; switching presentation preserves content.
 - Editable sections, revisions, reliable saving and recovery.
@@ -45,7 +49,7 @@ Working name: Brandfolio. The owner rejected the prior interface and selected an
 
 ## Evidence on Hand
 
-Conversation requirements and a new repository. No production customers, measured time savings, proprietary design assets, trained model or legal approvals. Any specimen content must be labeled fictional/sample.
+Conversation requirements, design-system artifacts, a working S01 frontend, original fictional SVG covers, and scoped browser/build verification. No production customers, measured time savings, proprietary design assets, trained model or legal approvals. Any specimen content must be labeled fictional/sample.
 
 ## Product Principles
 

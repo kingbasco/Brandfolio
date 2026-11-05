@@ -1,4 +1,23 @@
-# Foundation verification
+# Verification record
+
+## Landing page — November 5, 2026
+
+Scope: S01 public landing page and original cover-concept catalog, with initial P1 React/Vite components. It does not certify authentication, editable templates, guideline generation, backend services, AI or production deployment.
+
+Completed in the cloud workspace:
+
+- `npm run format:check` passed.
+- `npm run build` passed, including `tsc --noEmit`; Vite emitted a nonfatal Lucide `use client` directive warning for this client-only SPA.
+- Six Playwright Chromium tests passed after the final interaction fixes. They cover filters/search/sort/reset and URL refresh, modal focus cycling/Escape/return, an actual SVG download, artwork failure fallback, FAQ/mobile navigation, image loading and document overflow at 390/768/1440px. Tests run with reduced motion requested.
+- Foundation checks passed: internal links, 46 screens, 13 phases, eight adapters/seven plugins plus Apple Design, generated CSS and frontmatter parity, and 30 token contrast pairs.
+- Desktop and phone captures were refreshed from the corrected build: `/workspace/brandfolio-landing-desktop.png`, `/workspace/brandfolio-landing-mobile.png`, and `/workspace/brandfolio-landing-hero.png`. These are review artifacts in the cloud workspace, not committed deployment URLs.
+- Independent final review returned **ship** for its two listed fixes. Phone search text is now 16px; load more focuses the first appended cover and announces the updated shown/total count. The reviewer confirmed both resolved and saw no regression from that fix batch. This verdict covers those fixes, not a fresh whole-product audit.
+
+Better Design's hero comprehension check passed semantic clarity and screenshot-alone meaning, but reported a serious density heuristic: approximately 21 seconds for 44 words and three actions. The reviewer noted repeated catalog destinations and retained the owner's requested banner structure. This was not a clean automated design-audit pass.
+
+The Impeccable CLI/detector and Premium Python auditor were unavailable; their automated checks did not run. The project context and design contracts were read directly. No approved pixel comp exists for this surface. Full screen-reader/forced-colors verification, zoom and wider P1 matrices, non-Chromium browsers, performance certification and full WCAG conformance remain open.
+
+The GitHub Actions workflow now declares token/foundation checks, Node 24 `npm ci`, formatting, TypeScript/build, Chromium installation and the browser suite on pushes and pull requests. This records the workflow configuration; a remote run result must be checked separately before claiming CI success.
 
 ## TapTap v0.2 update
 

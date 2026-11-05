@@ -1,18 +1,20 @@
 # Surface briefs and wireframes
 
-These specify structure, not final high-fidelity screen approval. All 46 screens inherit one of these families plus the component/state contract.
+These specify surface families, not blanket high-fidelity approval of all 46 screens. S01 has an implementation and scoped verification described below; remaining screens inherit these families plus the component/state contract.
 
 ## Public website — Persuade (S01–S07)
 
-Job: understand the actual product and choose a next step. System-sans headline beside a real guideline specimen; one turquoise primary action. Use neutral breathing space and bounded turquoise/orange specimen accents from the TapTap-derived system. No fictitious testimonials or adoption metrics. The template gallery is artifact-led; legal/help routes use a reading layout.
+Job: understand the actual product and choose a next step. S01 follows the owner's large-banner/gallery brief: oversized system-sans headline on a turquoise banner beside original cover artwork, then a catalog with restrained metadata. Dark neutral actions remain readable against the banner. No fictitious testimonials or adoption metrics. The other public routes remain planned; legal/help routes will use a reading layout.
 
 ```text
-Brandfolio       Product  Templates  Help       Log in / Create account
-[Clear product promise + action]     [Actual guideline specimen]
-[Three real workflow stages: assets → edit → deliver]
-[Template selection with format/sections]
-[FAQ and legal navigation]
+Brandfolio       Templates  How it works  FAQs       Find your template
+[Large brand-guideline promise + action]     [Original cover concept]
+[Search / style filters / sort / shown count]
+[Repeated concept covers → preview → SVG cover download]
+[Planned workflow / accurate FAQ / attribution]
 ```
+
+See [S01's implementation brief](landing-page.md) for canonical owners, states, responsive behavior and evidence. Authentication, account creation and full template editing are not exposed as working landing-page actions.
 
 ## Authentication — Operate (S08–S12)
 
